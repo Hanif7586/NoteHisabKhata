@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navidehaze_24"
+        android:padding="5dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/animation_view"
+        app:lottie_rawRes="@raw/animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+<Button
+    android:id="@+id/buyID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ক্রেতার বিবরণ:"
+     />
+
+    <Button
+        android:id="@+id/sellID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ক্তথ্য পরিবর্তন করুন:"
+        android:visibility="gone"
+       />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+       android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_fname"
+        android:layout_height="wrap_content"
+        android:hint="নাম"
+     >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_lname"
+        android:layout_height="wrap_content"
+        android:hint="নাম্বার"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+           android:inputType="number"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_location"
+        android:layout_height="wrap_content"
+        android:hint="ঠিকানা"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_ponnername"
+        android:layout_height="wrap_content"
+        android:hint="পণ্যের নাম"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_ponnerporiman"
+        android:layout_height="wrap_content"
+        android:hint="পণ্যের পরিমাণ"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_advancetk"
+        android:layout_height="wrap_content"
+        android:hint=" অগ্রিম টাকা"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+           android:inputType="number"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_bakitk"
+        android:layout_height="wrap_content"
+        android:hint="বাকির পরিমাণ"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/kalpurush"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="যুক্ত করুন"
+            android:fontFamily="@font/kalpurush"
+            android:id="@+id/submit_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_btn"
+            android:text="তালিকা দেখুন"
+            android:fontFamily="@font/kalpurush"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_btn"
+            android:text="Edit"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
