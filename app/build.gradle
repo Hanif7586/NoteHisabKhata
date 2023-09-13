@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.recyclerviewcrud'
+    namespace 'com.example.curdql'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.recyclerviewcrud"
+        applicationId "com.example.curdsql"
         minSdk 24
         targetSdk 33
         versionCode 1

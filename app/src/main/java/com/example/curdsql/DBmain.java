@@ -1,4 +1,4 @@
-package com.example.recyclerviewcrud;
+package com.example.curdsql;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,7 +17,7 @@ public class DBmain extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        query="create table "+TABLENAME+"(id integer primary key, fname text)";
+        query="create table "+TABLENAME+"(id integer primary key, fname text, lname text,llocationn text,ponnername text,ponnerporiman text,advancetk text,bakitk text)";
         db.execSQL(query);
     }
 

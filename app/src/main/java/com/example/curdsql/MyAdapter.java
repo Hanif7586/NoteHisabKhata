@@ -1,4 +1,4 @@
-package com.example.recyclerviewcrud;
+package com.example.curdsql;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import static com.example.recyclerviewcrud.DBmain.TABLENAME;
+import static com.example.curdsql.DBmain.TABLENAME;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ModelViewHolder> {
     private ArrayList<Model> courseModelArrayList;

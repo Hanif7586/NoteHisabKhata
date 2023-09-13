@@ -1,4 +1,4 @@
-package com.example.recyclerviewcrud;
+package com.example.curdsql;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.textfield.TextInputLayout;
 
-import static com.example.recyclerviewcrud.DBmain.TABLENAME;
+import static com.example.curdsql.DBmain.TABLENAME;
 
 public class MainActivity extends AppCompatActivity {
     DBmain dBmain;

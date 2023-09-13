@@ -1,4 +1,4 @@
-package com.example.recyclerviewcrud;
+package com.example.curdsql;
 
 import org.junit.Test;
 

@@ -1,23 +1,21 @@
-package com.example.recyclerviewcrud;
+package com.example.curdsql;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-import static com.example.recyclerviewcrud.DBmain.TABLENAME;
+import static com.example.curdsql.DBmain.TABLENAME;
 
 
 public class activity_display_dataa extends AppCompatActivity {
